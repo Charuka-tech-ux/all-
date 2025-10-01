@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charuka's Resources</title>
+    <style>
+        /* Basic Reset and Box Model */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body and General Layout */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6; /* Light gray-green background */
+            color: #333;
+            /* Flexbox for centering */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Container for the Content */
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            /* Ensures it doesn't get too wide on desktops */
+            max-width: 600px; 
+            text-align: center;
+        }
+
+        /* Header Styling */
+        h1 {
+            color: #1a73e8; 
+            margin-bottom: 30px;
+            font-size: 2em;
+            border-bottom: 3px solid #fbbc05; 
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* List Styling */
+        .link-list {
+            list-style: none; /* Remove bullet points */
+            text-align: left;
+            padding: 0; /* Important for mobile to remove default padding */
+        }
+
+        .link-list li {
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: #e8f0fe;
+            border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        /* Link Styling */
+        .link-list a {
+            text-decoration: none; 
+            color: #1a73e8;
+            font-weight: 600;
+            display: block; 
+            font-size: 1.1em;
+            padding-right: 20px; 
+            position: relative;
+        }
+        
+        /* Arrow icon */
+        .link-list a::after {
+            content: '→';
+            position: absolute;
+            right: 0;
+            color: #4285f4;
+            font-weight: bold;
+        }
+
+        /* Hover effects (ignored on touch screens, but good for tablets/desktop) */
+        .link-list li:hover {
+            transform: translateY(-3px); 
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            background-color: #d2e3fc; 
+        }
+
+        /* ======================================================= */
+        /* MEDIA QUERY FOR EXTRA SMALL SCREENS (Mobile Optimization) */
+        /* ======================================================= */
+        @media (max-width: 400px) {
+            .container {
+                padding: 20px 15px; /* Reduce padding on container */
+            }
+            h1 {
+                font-size: 1.5em; /* Smaller header */
+                margin-bottom: 20px;
+            }
+            .link-list a {
+                font-size: 1em; /* Slightly smaller link text */
+            }
+            .link-list li {
+                padding: 12px; /* Smaller padding on list items */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>ManikShan Foreign Employment PVT LTD</h1>
+        <ul class="link-list">
+            <li>
+                <a href="https://charuka-tech-ux.github.io/Resume/" target="_blank">
+                    1. Resume 📑
+                </a>
+            </li>
+            <li>
+                <a href="https://charuka-tech-ux.github.io/-General-Placement-Questionnaire/" target="_blank">
+                    2. General Placement Questionnaire 📋
+                </a>
+            </li>
+            <li>
+                <a href="https://charuka-tech-ux.github.io/Placement-Questionnaire/" target="_blank">
+                    3. Placement Questionnaire 📝
+                </a>
+            </li>
+            <li>
+                <a href="https://charuka-tech-ux.github.io/-Visa-Processing-Questionnaire/" target="_blank">
+                    4. Visa Processing Questionnaire ✈️
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
